@@ -1,0 +1,83 @@
+body {
+  color: rgb(36, 173, 67);
+  font-family: sans-serif, arial, verdana;
+  margin: 0px;
+  margin-left: 10px;
+}
+
+div {
+  min-height: 100vh;
+  width: 100vw;
+}
+
+h1,h2 {
+  text-align: center;
+}
+
+h1{
+  font-size: 5em;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+img {
+  display: flex;
+  padding: 20px;
+  margin: 0 auto;
+  border-radius: 120px;
+}
+
+p {
+  width: 40%;
+  margin: 10vh 10vw;
+  font-size: 2em;
+}
+
+a {
+  color: black;
+  /*equivalent to color: rgb(0,0,0);*/
+}
+
+ol{
+  list-style: none;
+  padding: 0; /*0 doesn't actually need a unit bc 0 is always 0*/
+  margin-bottom: 10%;
+  font-size: 3em;
+  display: flex;
+  /*default flex-direction: row; */
+  justify-content: space-evenly;
+}
+
+li#lower {/*don't have to include HTML tag name before # but makes it more specific*/
+  margin-top: 7%;
+}
+/* to specify the change to only li tags nested with ul tags, use the selector ul li.item {}*/
+li#lowest {
+  margin-bottom: 14%;
+}
+/*If including the HTML tag name before # or . make sure not to include any spaces */
+div.contrast {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  flex-direction: column;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+ul li {
+  margin: 20px;
+}
+
+li:hover {
+  color: rgb(10,100,200);
+  font-size: 1.2em;
+  transition: 0.6s ease;
+}
